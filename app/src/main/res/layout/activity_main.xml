@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/calculadora_imc" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/icon_hearth" />
+
+
+    <EditText
+
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/botao_layout"
+        android:ems="10"
+        android:hint="  Peso(Ex: 80)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#75FDCE"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#4AE8D0" />
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/botao_layout"
+        android:ems="10"
+        android:freezesText="false"
+        android:hint="  Altura(Ex: 170)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textIsSelectable="false" />
+
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/botao_layout"
+        android:onClick="calcular"
+        android:shadowColor="#FFFFFF"
+        android:text="calcular"
+        android:textAlignment="center"
+        android:textColor="#F8F5F5"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
